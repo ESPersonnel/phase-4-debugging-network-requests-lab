@@ -63,11 +63,14 @@ developing your own process.
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+  There was an error in the create method in the toys controller. The Toy model was written as Toys. I changed it to Toy and it worked.
 
 - Update the number of likes for a toy
 
   - How I debugged:
+  The update method was missing a render json: toy. I added it and it worked.
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+  The destroy button was working as expected, I'm not sure what the problem was if there was any.
